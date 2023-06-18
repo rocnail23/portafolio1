@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Teko:wght@300;400;600&display=swap');
+
+:root{
+
+    --witeColor : #ffffff;
+    --redColor : rgb(255, 18, 18);
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+
+
+.nunito{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Teko', sans-serif;
+}
+
+
+
+
+button{
+    border-radius: 0;
+    border: none;
+}
+
+img{
+    width: 100%;
+    
+}
+
+ol,li{
+    list-style: none;
+}
+h1{
+    font-size: 2rem;
+    font-family: 'teko', sans-serif;
+    font-weight: 800;
+}
+h2{
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+}
+
+p{
+    color: #ffffff
+}
+
+.nav{
+    z-index: 100;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.keys{
+    color: var(--redColor)
+}
+
+
+
+@keyframes lean {
+    0%{
+        position: relative;
+    }
+    10%{
+       transform: rotate(30deg);
+    }
+    30%{
+        transform: rotate(-60deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    70%{
+        transform: translateY(10px);
+    }
+    80%{
+        transform: rotate(30deg) translateY(10px);
+    }
+    90%{
+        transform: rotate(-30deg)
+    }
+    100%{
+        transform: translate(0px)
+    }
+
+
+
+}
+.drift{
+    position: relative;
+    display: inline-block;
+    animation: lean 4s linear 2 2s;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.me{
+    width: 85%;
+    padding: 10px;
+    max-width: 800px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: var(--witeColor);
+    text-align: center;
+}
+
+.me_main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.me_main > p{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 500ms ease-in;
+}
+
+.me_main > p.appear{
+   opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+
+.photo{
+    background-color: red;
+    height: 125px;
+    width: 125px;
+    border-radius: 58%;
+    overflow: hidden;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.89);
+    animation: photoMove 3s linear infinite
+}
+
+@keyframes photoMove {
+    50%{
+        transform: translateY(-5px);
+    }
+    
+}
+
+
+.title{
+    position: relative;
+}
+
+.title::after{
+    content: "web full stack";
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    color: var(--redColor);
+    top: -10px;
+    width: 11ch;
+    margin: auto;
+    border-right: transparent;
+    animation: typing 5s steps(12) 1, blink 0.5s step-end alternate 14;
+    overflow: hidden;
+    
+}
+
+@keyframes typing {
+  from {width: 0}
+}
+@keyframes blink {
+    50%{
+        border-right: 2px solid var(--redColor);
+    }
+    
+  
+    
+}
+
+
+
+
+
+
