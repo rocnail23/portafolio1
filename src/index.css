@@ -4,6 +4,7 @@
 
     --witeColor : #ffffff;
     --redColor : rgb(255, 18, 18);
+    --background : rgb(18, 17, 17);
 }
 
 
@@ -59,7 +60,8 @@ p{
     position: relative;
     text-align: center;
     padding: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 1rem;
+    background-color:  var(--background)
 }
 
 .keys{
@@ -119,6 +121,7 @@ p{
     gap: 20px;
     color: var(--witeColor);
     text-align: center;
+    background-color:var(--background)
 }
 
 .me_main{
@@ -129,6 +132,7 @@ p{
 
 .me_main > p{
     transform: translateY(50px);
+    font-size: 1.2rem;
     opacity: 0;
     transition: all 500ms ease-in;
 }
