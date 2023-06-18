@@ -3,7 +3,7 @@ import { loadFull } from 'tsparticles';
 import config from "./config"
 import Particles from 'react-tsparticles';
 
-const ParticleBackgrounf = () => {
+const ParticleBackground = () => {
     const particlesInit = useCallback(async engine => {
        await console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -29,4 +29,4 @@ const ParticleBackgrounf = () => {
   )
 }
 
-export default ParticleBackgrounf
+export default ParticleBackground

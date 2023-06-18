@@ -1,7 +1,8 @@
 import { Fragment, useState } from 'react'
-import ParticleBackgrounf from './particle/particleBackgrounf'
+
 import Header from './components/Header'
 import Me from './components/Me'
+import ParticleBackground from './particle/ParticleBackground'
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <Me setIsLoading={setIsLoading}/>
      </main>
 
-     <ParticleBackgrounf/>
+     <ParticleBackground/>
     </Fragment>
 
   )
