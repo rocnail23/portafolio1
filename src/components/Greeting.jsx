@@ -5,9 +5,9 @@ const Greeting = () => {
     <article className='greeting'>
             <h1 className='title'>Desarrollador</h1>
         <motion.button
-        initial={{scale:0}}
-        animate={{scale:1.2}}
-        transition={{duration:1}} className='calendly' onClick={() =>  Calendly.initPopupWidget({url: 'https://calendly.com/jdanielrojas16/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=1a1a1a&text_color=ffffff&primary_color=ff0004'
+        initial={{scale:1}}
+        animate={{scale:1.05}}
+        transition={{duration:1,repeat:Infinity }} className='calendly' onClick={() =>  Calendly.initPopupWidget({url: 'https://calendly.com/jdanielrojas16/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=1a1a1a&text_color=ffffff&primary_color=ff0004'
     })}>agenda una reunion conmigo</motion.button>
         <motion.p 
           initial={{y:100, opacity: 0}}
