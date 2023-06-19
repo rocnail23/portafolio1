@@ -13,16 +13,9 @@
     padding: 0;
     margin: 0;
     z-index: 1;
-}
-
-
-
-.nunito{
-    font-family: 'Nunito', sans-serif;
     font-family: 'Teko', sans-serif;
+    font-size: 16px;
 }
-
-
 
 
 button{
@@ -52,6 +45,7 @@ h2{
 
 p{
     color: #ffffff
+
 }
 
 .nav{
@@ -131,16 +125,9 @@ p{
 }
 
 .me_main > p{
-    transform: translateY(50px);
-    font-size: 1.2rem;
-    opacity: 0;
-    transition: all 500ms ease-in;
+    font-size: 1.2rem
 }
 
-.me_main > p.appear{
-   opacity: 1;
-    transform: translateY(0px);
-}
 
 
 
@@ -179,6 +166,7 @@ p{
     border-right: transparent;
     animation: typing 5s steps(12) 1, blink 0.5s step-end alternate 14;
     overflow: hidden;
+    height: 2rem;
     
 }
 
@@ -189,10 +177,26 @@ p{
     50%{
         border-right: 2px solid var(--redColor);
     }
-    
-  
-    
+     
 }
+
+.calendly{
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+    height: 2rem;
+    background-color: var(--redColor);
+    margin-bottom: 0.7rem;
+    color: var(--witeColor);
+    display: flex;
+    align-items: center;
+    border-radius: 50px 0px 50px 0;
+}
+.calendly:hover{
+ scale: 1.1;
+
+}
+
 
 
 
