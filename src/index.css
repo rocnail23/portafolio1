@@ -17,6 +17,10 @@
     font-size: 18px;
 }
 
+.nunito{
+    font-family: "Nunito",sans-serif;
+}
+
 
 button{
     border-radius: 0;
@@ -209,6 +213,7 @@ p{
 .technologies > h3{
     position: relative;
     display: inline-block;
+    margin-bottom: 0.5rem;
     width: 95px;
 }
 .technologies > h3 > span{
@@ -219,7 +224,8 @@ p{
 
 .technologies_list{
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    grid-template-columns: repeat(3,80px);
     gap: 1rem;
 }
 
