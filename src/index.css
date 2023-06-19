@@ -14,7 +14,7 @@
     margin: 0;
     z-index: 1;
     font-family: 'Teko', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -33,14 +33,16 @@ ol,li{
 }
 h1{
     font-size: 2rem;
-    font-family: 'teko', sans-serif;
     font-weight: 800;
 }
 h2{
     font-size: 1.6rem;
-    color: white;
-    font-family: 'Teko', sans-serif;
     font-weight: 600;
+}
+
+h3{
+ font-size: 1.4rem;
+ text-align: left;
 }
 
 p{
@@ -147,6 +149,10 @@ p{
     
 }
 
+.greeting{
+    margin-bottom: 1rem;
+}
+
 
 .title{
     position: relative;
@@ -193,9 +199,29 @@ p{
 }
 .calendly:hover{
  scale: 1.1;
-
 }
 
+.technologies{
+    display: flex;
+    flex-direction: column;
+}
+
+.technologies > h3{
+    position: relative;
+    display: inline-block;
+    width: 95px;
+}
+.technologies > h3 > span{
+    position:absolute;
+    top: 0.3rem;
+    right: -2.5rem;
+}
+
+.technologies_list{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 1rem;
+}
 
 
 
