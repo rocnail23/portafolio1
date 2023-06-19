@@ -234,7 +234,7 @@ p{
 
 .technologies_list > li > span > i {
     color: var(--redColor);
-    -webkit-text-stroke: #ffffff 0.2px;
+    
 
 }
 
