@@ -233,15 +233,10 @@ p{
 
 
 .technologies_list > li > span > i {
-    color: #ffffff;
-    text-shadow:
-    -1px -1px 0 var(--redColor),
-    1px -1px 0 var(--redColor),
-    -1px 1px 0 var(--redColor),
-    1px 1px 0 var(--redColor); 
+    color: var(--redColor);
+    -webkit-text-stroke: #ffffff 0.2px;
+
 }
-
-
 
 
 
