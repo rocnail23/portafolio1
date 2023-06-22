@@ -3,6 +3,7 @@ import {motion} from "framer-motion"
 import icons from "../utils/icons"
 import Technology from './technology'
 
+
 const Technologies = () => {
   console.log(icons)
   return (
