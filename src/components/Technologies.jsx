@@ -1,7 +1,8 @@
 import React from 'react'
 import {motion} from "framer-motion"
 import icons from "../utils/icons"
-import Technology from './technology'
+import TechnologyIcon from './TechnologyIcon'
+
 
 
 const Technologies = () => {
@@ -17,7 +18,7 @@ const Technologies = () => {
         <main>
         <ul className='technologies_list'>
          {icons.map(icon => {
-          return <Technology icon={icon}/>
+          return <TechnologyIcon icon={icon}/>
          })}
           <motion.li
            initial={{opacity: 0}}
