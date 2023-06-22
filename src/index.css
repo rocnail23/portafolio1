@@ -127,7 +127,7 @@ p{
 .me_main{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    
 }
 
 .me_main > p{
@@ -155,7 +155,7 @@ p{
 
 .greeting{
     margin-bottom: 1rem;
-    
+    max-width: 300px;
 }
 
 
@@ -164,16 +164,16 @@ p{
 }
 
 .title::after{
-    content: "web full stack";
+    content: "WEB FULLSTACK";
     display: block;
     position: relative;
     white-space: nowrap;
     color: var(--redColor);
-    top: -10px;
-    width: 11ch;
+    top: -18px;
+    width: 12.5ch;
     margin: auto;
     border-right: transparent;
-    animation: typing 5s steps(12) 1, blink 0.5s step-end alternate 14;
+    animation: typing 5s steps(13) 1, blink 0.5s step-end alternate 14;
     overflow: hidden;
     height: 2rem;
     
@@ -209,34 +209,44 @@ p{
 .technologies{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
 }
 
 .technologies > h3{
     position: relative;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    width: 95px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    
 }
 .technologies > h3 > span{
-    position:absolute;
-    top: 0.3rem;
-    right: -2.5rem;
+   position: absolute;
+   top: 5px;
+   
 }
 
 .technologies_list{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3,80px);
-    gap: 1rem;
-}
+    grid-template-columns: repeat(2,1fr);
 
-
-
-.technologies_list > li > span > i {
-    color: var(--redColor);
     
 
 }
+
+.technologies_list > li > span > i {
+    color: var(--redColor);
+   font-size: 4rem;
+}
+
+.technologies_list> li:last-child{
+    grid-column: span 2;
+}
+.technologies_list> li:last-child > span >i{
+    font-size: 3.2rem;
+}
+
 
 
 

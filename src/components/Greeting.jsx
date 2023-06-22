@@ -3,7 +3,7 @@ import {motion}  from "framer-motion"
 const Greeting = () => {
   return (
     <article className='greeting'>
-            <h1 className='title'>Desarrollador</h1>
+            <h1 className='title'>DESARROLLADOR</h1>
         <motion.button
         initial={{scale:1}}
         animate={{scale:1.05}}
