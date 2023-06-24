@@ -16,6 +16,7 @@
     font-family: 'Teko', sans-serif;
     font-size: 18px;
     color: var(--witeColor);
+    background-color: var(--background);
 }
 
 .nunito{
