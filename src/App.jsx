@@ -21,7 +21,7 @@ function App() {
       <Projects/>
      </main>
      <Footer/>
-     <ParticleBackground/>
+     
     </Fragment>
 
   )
