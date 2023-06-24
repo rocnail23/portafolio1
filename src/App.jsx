@@ -13,6 +13,7 @@ function App() {
  
   return (
     <Fragment>
+       <ParticleBackground/>
       {isLoading ? <div className='negra'></div> : null }
      <Header/>
      <main className='container'>
@@ -21,7 +22,7 @@ function App() {
       <Projects/>
      </main>
      <Footer/>
-     
+    
     </Fragment>
 
   )
