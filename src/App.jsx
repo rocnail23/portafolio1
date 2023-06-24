@@ -18,6 +18,7 @@ function App() {
       <Me setIsLoading={setIsLoading}/>
       <AboutMe/>
       <Projects/>
+      <ParticleBackground/>
      </main>
      
     </Fragment>
