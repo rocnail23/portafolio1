@@ -23,7 +23,7 @@ function App() {
      </main>
      <Footer/>
       <div style={{height: "100vh"}}>
-        <ParticleBackground/>
+        
       </div>
     </Fragment>
 
