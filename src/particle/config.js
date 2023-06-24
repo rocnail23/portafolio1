@@ -43,7 +43,7 @@ const options={
         },
         move: {
             direction: "none",
-            enable: true,
+            enable: false,
             outModes: {
                 default: "bounce",
             },
@@ -68,7 +68,7 @@ const options={
             value: { min: 1, max: 5 },
         },
     },
-    detectRetina: true,
+    detectRetina: false,
 }
 
 export default options
