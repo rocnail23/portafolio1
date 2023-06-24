@@ -22,7 +22,7 @@ function App() {
       <Projects/>
      </main>
      <Footer/>
-     <div style={{backgroundColor: "black", height: "500vh", position: "absolute", width: "500px", top: "0px", zIndex: "1",}}>
+     <div style={{backgroundColor: "black", height: "200vh", position: "absolute", width: "500px", top: "0px", zIndex: "1",}}>
     <ParticleBackground/>
      </div>
     </Fragment>
