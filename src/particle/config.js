@@ -34,7 +34,7 @@ const options={
         links: {
             color: "#ffffff",
             distance: 150,
-            enable: false,
+            enable: true,
             opacity: 0.5,
             width: 1,
         },
@@ -68,7 +68,7 @@ const options={
             value: { min: 1, max: 5 },
         },
     },
-    detectRetina: false,
+    detectRetina: true,
 }
 
 export default options
