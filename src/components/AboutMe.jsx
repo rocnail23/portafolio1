@@ -8,7 +8,7 @@ const AboutMe = () => {
     transition={{duration: .5}}
     className='section'>
         <article className='point'>
-        <h3>about me</h3>
+        <h3>about me <span><i className='bx bx-user bx-sm'></i></span></h3>
         <p>"¡Hola! Soy jose, he tenido el privilegio de trabajar en una variedad de proyectos emocionantes que han fortalecido mi conjunto de habilidades y conocimientos.
         Soy un apasionado del aprendizaje continuo y siempre estoy buscando mantenerme al día con las últimas tendencias y tecnologías en el mundo del desarrollo web.
         <br/>

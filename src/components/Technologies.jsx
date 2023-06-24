@@ -14,11 +14,11 @@ const Technologies = () => {
         transition={{duration:1}}
     className='point'>
         <h3
-        >Tecnologias <span><i class='bx bx-code-block bx-sm'></i></span></h3>
+        >Tecnologias <span><i className='bx bx-code-block bx-sm'></i></span></h3>
         <main>
         <ul className='technologies_list'>
          {icons.map(icon => {
-          return <TechnologyIcon icon={icon}/>
+          return <TechnologyIcon key={icon.name} icon={icon}/>
          })}
           <motion.li
            initial={{opacity: 0}}

@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Me from './components/Me'
 import ParticleBackground from './particle/ParticleBackground'
 import AboutMe from './components/AboutMe'
+import Projects from './components/Projects'
 
 
 function App() {
@@ -16,10 +17,9 @@ function App() {
      <main className='container'>
       <Me setIsLoading={setIsLoading}/>
       <AboutMe/>
-
+      <Projects/>
      </main>
-
-     <ParticleBackground/>
+     
     </Fragment>
 
   )
