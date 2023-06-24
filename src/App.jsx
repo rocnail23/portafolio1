@@ -3,6 +3,7 @@ import { Fragment, useState } from 'react'
 import Header from './components/Header'
 import Me from './components/Me'
 import ParticleBackground from './particle/ParticleBackground'
+import AboutMe from './components/AboutMe'
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
      <Header/>
      <main className='container'>
       <Me setIsLoading={setIsLoading}/>
+      <AboutMe/>
+
      </main>
 
      <ParticleBackground/>

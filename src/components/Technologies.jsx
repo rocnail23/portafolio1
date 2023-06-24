@@ -12,7 +12,7 @@ const Technologies = () => {
     initial={{y:100, opacity:0}}
         animate={{opacity:1, y:0}}
         transition={{duration:1}}
-    className='technologies'>
+    className='point'>
         <h3
         >Tecnologias <span><i class='bx bx-code-block bx-sm'></i></span></h3>
         <main>

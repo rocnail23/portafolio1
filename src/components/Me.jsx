@@ -12,16 +12,16 @@ const Me = ({setIsLoading}) => {
   
 
   return (
-    <article className='me'>
+    <section className='section'>
         <div className='photo'>
         <img src={yo} alt=""  onLoad={() => setIsLoading(false)}/>
         </div>
-        <main className='me_main'>
+        <section className='me_main'>
           <Greeting/>
           <Technologies/>
-        </main>
+        </section>
         
-    </article>
+    </section>
   )
 }
 
