@@ -258,10 +258,23 @@ p{
     user-select: none;
 }
 
+.ProjectGrid{
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 250px;
+    justify-content: center;
+}
+
 
 .card{
     width: 250px;
     margin: auto;
+}
+
+.card_title{
+    margin-bottom: rem;
+    border-bottom: 1px double var(--redColor);
 }
 
 .card_img {
@@ -295,18 +308,45 @@ p{
     border-radius: 25px 0px 25px 0px;
     transition: scale .3s linear;
     cursor: pointer;
-    display: none;
-
-}
-
-.card_img:hover > span > button{
-    display: inline;
+    
 }
 
 .card_img > span > button:hover{
     scale: 1.2;
 }
 
+footer{
+    position: relative;
+    margin-top: 4rem;
+    height: 42px;
+    background-color: var(--redColor);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > ul{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer > ul > li{
+    display: flex;
+    text-align: center;
+}
+
+
+footer > ul > li > i:hover{
+    scale: 1.1;
+}
+
+.footer_icon{
+    color: black;
+}
 
 
 

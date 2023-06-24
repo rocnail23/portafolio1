@@ -6,6 +6,7 @@ const AboutMe = () => {
     initial={{y:100, opacity:0}}
     whileInView={{opacity: 1, y:20}}
     transition={{duration: .5}}
+    viewport={{once: true}}
     className='section'>
         <article className='point'>
         <h3>about me <span><i className='bx bx-user bx-sm'></i></span></h3>

@@ -12,6 +12,7 @@ const Technologies = () => {
     initial={{y:100, opacity:0}}
         animate={{opacity:1, y:0}}
         transition={{duration:1}}
+        viewport={{once:true}}
     className='point'>
         <h3
         >Tecnologias <span><i className='bx bx-code-block bx-sm'></i></span></h3>
@@ -24,7 +25,7 @@ const Technologies = () => {
            initial={{opacity: 0}}
            transition={{duration: 1}}
            whileInView={{opacity: 1}}
-           viewport={{margin: "-50px"}}><h4>ExpressJs</h4><span className='icons'><i className={`bx bx-tada-hover `}  >Ex</i></span></motion.li>  
+           viewport={{margin: "-50px",once:true}}><h4>ExpressJs</h4><span className='icons'><i className={`bx bx-tada-hover `}  >Ex</i></span></motion.li>  
         </ul>
         </main>
     </motion.article
