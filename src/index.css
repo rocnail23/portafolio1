@@ -16,7 +16,7 @@
     font-family: 'Teko', sans-serif;
     font-size: 18px;
     color: var(--witeColor);
-    background-color: var(--background);
+    text-decoration: none;
 }
 
 .nunito{
@@ -214,20 +214,26 @@ p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
     margin: auto;
 }
 
 .point > h3{
-    position: relative;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+   display: flex;
+  
+   align-items: center;
+   gap: 5px;
     
 }
 .point > h3 > span{
-   position: absolute;
-   top: 5px;
-   
+
+   position: relative;
+   top: 3px;
+
+}
+
+.point > h3 > span > i {
+    color: var(--redColor);
 }
 
 .technologies_list{
@@ -251,6 +257,56 @@ p{
     font-size: 3.2rem;
     user-select: none;
 }
+
+
+.card{
+    width: 250px;
+    margin: auto;
+}
+
+.card_img {
+    position: relative;
+}
+
+.card_img > span {
+    position: absolute;
+    opacity: 0;
+    background-color: hsla(0, 4%, 9%, 0.722);
+    width: 250px;
+    height: 250px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card_img:hover > span {
+    opacity: 1;
+}
+
+
+.card_img > span > button{
+    padding: 0px 20px;
+    background-color: var(--redColor);
+    border-radius: 25px 0px 25px 0px;
+    transition: scale .3s linear;
+    cursor: pointer;
+    display: none;
+
+}
+
+.card_img:hover > span > button{
+    display: inline;
+}
+
+.card_img > span > button:hover{
+    scale: 1.2;
+}
+
 
 
 

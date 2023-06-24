@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import yo from "../assets/yo3.0.webp"
+import yo from "../assets/1.webp"
 import {motion} from "framer-motion"
 import Greeting from './Greeting'
 import Technologies from './Technologies'
@@ -14,7 +14,7 @@ const Me = ({setIsLoading}) => {
   return (
     <section className='section'>
         <div className='photo'>
-        <img src={yo} alt=""  onLoad={() => setIsLoading(false)}/>
+        <img src={yo} alt="" />
         </div>
         <section className='me_main'>
           <Greeting/>
