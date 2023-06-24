@@ -7,8 +7,8 @@ import ParticleBackground from './particle/ParticleBackground.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ParticleBackground>
+    <ParticleBackground/>
     <App />
-    </ParticleBackground>
+    
   </React.StrictMode>,
 )

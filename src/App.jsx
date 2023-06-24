@@ -22,9 +22,6 @@ function App() {
       <Projects/>
      </main>
      <Footer/>
-      <div style={{height: "100vh"}}>
-        
-      </div>
     </Fragment>
 
   )
