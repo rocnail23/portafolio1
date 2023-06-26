@@ -144,7 +144,7 @@ p{
 
 
 
-.photo{
+.mobile{
     background-color: red;
     height: 125px;
     width: 125px;
@@ -152,6 +152,10 @@ p{
     overflow: hidden;
     box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.89);
     animation: photoMove 3s linear infinite
+}
+
+.desktop{
+    display: none;
 }
 
 @keyframes photoMove {
@@ -245,7 +249,6 @@ p{
     justify-content: center;
     grid-template-columns: repeat(2,1fr);
 
-    
 
 }
 
@@ -352,6 +355,128 @@ footer > ul > li > i:hover{
 .footer_icon{
     color: black;
 }
+
+
+@media (min-width: 768px) {
+    
+p{
+    font-size: 1.2rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+
+
+
+.container_photo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.photo{
+    border-radius: 50%;
+    position: relative;
+}
+
+.photo::after{
+    content: "}";
+    display:  block;
+    position: absolute;
+    font-size: 10rem;
+    z-index: 400;
+    top: -20px;
+    right: 40px;
+    color: var(--redColor);
+    animation: keys .3s linear 1;
+}
+
+.photo::before{
+    content: "{";
+    position: absolute;
+    font-size: 10rem;
+    z-index: 600;
+    top: -20px;
+    left: 40px;   
+    color: var(--redColor); 
+    animation: keys 0.5s linear 1 ;
+}
+
+@keyframes keys {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    z-index: 500;
+    height: 300px;
+    width: 300px;
+    display: block;
+    display: relative;
+    border-radius: 50%;
+
+}
+
+.greeting{
+    max-width: 400px;
+}
+
+
+.title{
+    white-space: 5px;
+    font-size: 3rem;
+}
+
+.title::after{
+    height: 3rem;
+}
+
+.calendly{
+    font-size: 1.5rem;
+    height: 2.5rem;
+}
+
+.technologies_list{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.technologies_list> li:last-child{
+    grid-column: span 1;
+}
+
+.ProjectGrid{
+
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+
+
+}
+
+
+
+
+
 
 
 

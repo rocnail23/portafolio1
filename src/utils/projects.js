@@ -29,7 +29,7 @@ const projects = [
 },
 
 {
-    name: "logging de usuarios - Back-End",
+    name: "logging de usuarios",
     description: "se crearon las rutas para el logging de usuarios, necesitando la confirmacion de creacion de usuario mediante correo electronico al igual que el cambio de contraseñas",
     linkWeb: "https://visionary-dango-35c938.netlify.app/",
     linkRepo: "https://github.com/Rocnail26/userauth",
