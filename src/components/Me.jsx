@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 
 import {motion} from "framer-motion"
 import Greeting from './Greeting'
@@ -13,14 +13,20 @@ const Me = ({setIsLoading}) => {
   
 
   return (
+    <div className='section home'>
     <section className='section first'>
         <Photo/>
-        <section className='me_main'>
-          <Greeting/>
-          <Technologies/>
         </section>
+
+        <section className='section me_main'>
+          <Greeting/>
+          </section>
+
+          <section className='section tech'>
+          <Technologies/>
+          </section>
         
-    </section>
+        </div>
   )
 }
 
