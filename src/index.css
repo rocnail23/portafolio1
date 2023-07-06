@@ -252,7 +252,9 @@ p{
    top: 3px;
 
 }
-
+.laptop{
+    display: none;
+}
 .point > h3 > span > i {
     color: var(--redColor);
 }
@@ -338,16 +340,15 @@ p{
 footer{
     position: relative;
     margin-top: 4rem;
-    height: 42px;
+    height: 44px;
     background-color: var(--redColor);
     z-index: 50;
-}
-
-footer{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 
 footer > ul{
     display: flex;
@@ -367,6 +368,7 @@ footer > ul > li > i:hover{
 
 .footer_icon{
     color: black;
+    font-size: 1.8rem;
 }
 
 
@@ -398,6 +400,7 @@ h4{
 .photo{
     border-radius: 50%;
     position: relative;
+    
 }
 
 .photo::after{
@@ -462,10 +465,12 @@ h4{
 .title{
     white-space: 5px;
     font-size: 3rem;
+
 }
 
 .title::after{
     height: 3rem;
+    top: -30px
 }
 
 .calendly{
@@ -475,6 +480,7 @@ h4{
 
 .technologies_list{
     grid-template-columns: repeat(3,1fr);
+
 }
 
 .technologies_list> li:last-child{
@@ -490,31 +496,62 @@ h4{
 }
 
 
-@media (min-width: 976px){
+@media (min-width: 978px ) {
+
+    p{
+        font-size: 1.7rem;
+    }
+    
+    h3{
+        font-size: 3.5rem;
+    }
+    
+    h4{
+        font-size: 2rem;
+    }
+    
 
 .title{
-font-size: 2rem;
-margin-bottom: -1.5rem;
+font-size: 6rem;
+margin-bottom: -2rem;
 }    
+
+.title::after{
+    height: 6rem;
+    top: -65px
+}
+
+.calendly{
+    font-size: 2.5rem;
+    height: 3.5rem;
+}
 
 .section{
  max-width: 1200px;
  width: 90%;
 }
 
+
+.desktop{
+        height: 400px;
+        width: 400px;
+}
+
 .section.home{
 display: grid;
 background-color: transparent;
-grid-template-columns: 50% 50%;
-grid-template-rows: 20% 80%;
-gap: 1rem
+grid-template-columns: 40% 60%;
+grid-template-rows: 35% 65%;
+gap: 1rem;
+
 
 }
 
 .section.first{
     grid-column: 1/2;
     grid-row: 1/3;
-    background-color: transparent;
+    background-color: var(--background);
+    
 }
 
 .section.tech{
@@ -526,7 +563,102 @@ gap: 1rem
     gap: 5px;
 }
 
+.greeting{
+    max-width: none;
+    width: 700px;
 }
+
+.technologies_list> li:last-child{
+    grid-column: span 1;
+}
+
+.section.me_main{
+    max-width: none;
+}
+
+.technologies_list{
+    grid-template-columns: repeat(5,150px);
+
+}
+
+
+ .technologies_list> li:nth-child(6){
+       grid-area: 2/1/2/span 2;
+ }
+
+ .technologies_list> li:nth-child(7){
+    grid-area: 2/2/2/span 2
+}
+
+.technologies_list> li:nth-child(8){
+    grid-area: 2/3/3/span 2
+}
+
+.technologies_list> li:nth-child(9){
+    grid-area: 2/4/4/span 2
+}
+
+.point {
+    max-width: none;
+}
+
+.point.aboutMe{
+    display: flex;
+    flex-direction: row;
+}
+
+.point-flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.laptop{
+    display: block;
+}
+
+.card{
+    width: 500px;
+    margin: auto;
+}
+
+.card_img > span{
+    width: 500px;
+    height: 500px;
+}
+
+.card_img > span > button{
+    font-size: rem;
+    
+}
+
+footer{
+    height: 80px;
+}
+
+.footer_icon{
+    font-size: 3rem;
+    
+}
+
+.nav{
+    height: 70px;
+    margin-bottom: 2.5rem;
+    
+}
+
+nav > h2 {
+    font-size: 2rem;
+}
+
+
+
+}
+
+
 
 
 

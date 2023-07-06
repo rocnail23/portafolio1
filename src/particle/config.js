@@ -22,8 +22,8 @@ const options={
                 quantity: 1,
             },
             repulse: {
-                distance: 100,
-                duration: 100,
+                distance: 0,
+                duration: 0,
             },
         },
     },
@@ -39,7 +39,7 @@ const options={
             width: 1,
         },
         collisions: {
-            enable: true,
+            enable: false,
         },
         move: {
             direction: "none",

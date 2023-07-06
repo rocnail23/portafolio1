@@ -25,12 +25,12 @@ const CardProject = ({ project }) => {
           <>
            <button>
            <a href={project.linkRepo} target="_blank">
-             respositorio
+            <p>respositorio</p> 
            </a>
          </button>
          <button >
            <a href={project.linkWeb} target="_black">
-             web
+             <p>web</p>
            </a>
          </button>
          </>
