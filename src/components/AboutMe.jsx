@@ -17,7 +17,7 @@ const AboutMe = () => {
         Soy un apasionado del aprendizaje continuo y siempre estoy buscando mantenerme al día con las últimas tendencias y tecnologías en el mundo del desarrollo web.
         <br/>
         <br/>
-        Estoy emocionado por las oportunidades de colaboración y estoy abierto/a a nuevos proyectos desafiantes. Si estás buscando un desarrollador web comprometido y entusiasta para tu próximo proyecto, ¡no dudes en contactarme!
+        Estoy emocionado por las oportunidades de colaboración y estoy abierto a nuevos proyectos desafiantes. Si estás buscando un desarrollador web comprometido y entusiasta para tu próximo proyecto, ¡no dudes en contactarme!
         
         </p>
         </div>
